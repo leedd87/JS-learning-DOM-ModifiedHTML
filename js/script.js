@@ -40,5 +40,20 @@ hoteles.appendChild(nuevoHotel)
 
 let reserva1 = document.getElementById('reserva1')
 
-console.dir(reserva1);
-console.dir(reserva1.innerHTML);
+let nuevaReserva = document.createElement('section')
+nuevaReserva.innerHTML = `<div class='container'>El hotel elegido es:
+${prompt('Elegi un hotel: Punta Cana, Dominica, Grand Bavaro')}, la habitacion que elegiste es:
+${prompt('Elegi tipo de habitacion: Suite, Doble, Triple')} y el servicio que elegiste es:
+${prompt('Elegi tipo de servicio: All Inclusive, Media Pension, Solo Desayuno')}.
+Gracias por reservar con nosotros, te esperamos.</div>
+`
+reserva1.appendChild(nuevaReserva);
+
+let nuevaReservaDos = document.createElement('section')
+nuevaReservaDos.innerHTML = `<div class='container'>El hotel elegido es:
+${prompt('Elegi un hotel: Punta Cana, Dominica, Grand Bavaro')}, la habitacion que elegiste es:
+${prompt('Elegi tipo de habitacion: Suite, Doble, Triple')} y el servicio que elegiste es:
+${prompt('Elegi tipo de servicio: All Inclusive, Media Pension, Solo Desayuno')}.
+Gracias por reservar con nosotros, te esperamos.</div>`
+
+reserva1.appendChild(nuevaReservaDos)
